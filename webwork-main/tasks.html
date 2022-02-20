@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var name = prompt('What is your name?');
+         name = name.toLowerCase();
+         alert('Hello ' + name[0].toUpperCase() + name.slice(1, Infinity)+ '!');
+
+         var age, leftAge;
+         age = prompt("what is your age?");
+         leftAge = 90-age;
+         let x = leftAge * 12;
+         let y = leftAge * 52;
+         let z = leftAge * 365;
+         alert("You have " + x + " months, " + y + " weeks, " + z + " days left.");
+
+
+         var humanWeight = 43;
+         var humanHeight = 167;
+         var bmi = humanWeight / Math.pow(humanHeight, 2); 
+         function bmiResult() {
+         var result;
+         if (bmi <= 18.5) {
+         result = "Your BMI is ," + bmi + " so you are underweight."
+         }
+         else if (bmi > 18.5 && bmi < 24.9) {
+         result = "Your BMI is ," + bmi + " so you have a normal weight."
+         }
+         else  if (bmi > 24.9) {
+         result = "Your BMI is ," + bmi + " so you are overweight."
+            }
+         return result; 
+        }
+         alert(bmiResult());
+
+
+
+         var year = prompt('Enter an year!');
+         if (( year % 400 == 0 ) || ((year % 4 == 0) && (year % 100 != 0)))
+         {
+           alert(year + " is a leap year.");
+         }
+         else 
+         { 
+         alert(year + " is not a leap year.")
+         }
+         
+
+         
+         var char = ["Aidana", "Bekbolat", "Mariya", "Aleksandr", "Diana"];
+         randomChar = Math.floor(Math.random() * 5);
+         confirm (char[randomChar]+' is going to buy lunch today.');
+
+         var n = parseInt(prompt("Enter a number"));
+         var fibNum = [];
+         fibNum[0] = 0;
+         fibNum[1] = 1;
+         for (var i = 2; i <= n; i++) {
+         fibNum[i] = fibNum[i - 1] + fibNum[i - 2];
+         }
+         alert("[" + fibNumbers + "]");
+
+
+        
+
+
+    </script>
+</head>
+</html>
